@@ -2,15 +2,15 @@ package com.example.cyclovillev4;
 
 public class Product {
 
-    public String product_id;
-    public String product_name;
-    public String product_price;
-    public String quantity;
-    public String category;
-    public String description;
-    public String image;
+    private String product_id;
+    private String product_name;
+    private String product_price;
+    private String quantity;
+    private String category;
+    private String description;
+    private String image;
 
-    public Product(String product_id, String product_name, String product_price, String quantity, String description, String category, String image) {
+    private Product(String product_id, String product_name, String product_price, String quantity, String description, String category, String image) {
         this.product_id = product_id;
         this.product_name = product_name;
         this.product_price = product_price;
@@ -41,7 +41,7 @@ public class Product {
         this.product_name = product_name;
     }
 
-    public String getPrice() {
+    String getPrice() {
 
         return product_price;
     }
@@ -51,7 +51,7 @@ public class Product {
         this.product_price = product_price;
     }
 
-    public String getQuantity() {
+    private String getQuantity() {
 
         return quantity;
     }
@@ -61,7 +61,7 @@ public class Product {
         this.quantity = quantity;
     }
 
-    public String getDescription() {
+    private String getDescription() {
 
         return description;
     }
@@ -71,7 +71,7 @@ public class Product {
         this.description = description;
     }
 
-    public String getCategory() {
+    private String getCategory() {
 
         return category;
     }
@@ -81,7 +81,7 @@ public class Product {
         this.category = category;
     }
 
-    public String getImage() {
+    private String getImage() {
 
         return image;
     }
